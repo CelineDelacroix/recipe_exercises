@@ -1,0 +1,118 @@
+body{
+    background-color:hsl(30, 54%, 90%);
+}
+/* POLICES */
+h1{
+    font-family:"Young Serif";
+    font-weight: 400;
+    font-size: 2.3em;
+    color:hsl(24, 5%, 18%)
+}
+h2{
+    font-family:"Young Serif";
+    font-weight: 400;
+    font-size: 35px;  
+}
+h3{
+    font-family:"Outfit",sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+p,li,th{
+    font-family:"Outfit",sans-serif;
+    font-weight: 400;
+    font-size: 16px;    
+}
+.liste_instructions>li::marker{
+    font-weight: 800;
+}
+
+/* COLORS */
+p,li,tr>th:first-child{
+    color:hsl(30, 10%, 34%);}
+h3,.liste_preparation>li::marker{
+    color:hsl(332, 51%, 32%);
+}
+h2,.liste_ingredients>li::marker,.liste_instructions>li::marker{
+    color:hsl(14, 45%, 36%) ;
+}
+tr>th:nth-child(2){
+    font-weight: 800;
+    color:hsl(14, 45%, 36%);
+}
+
+
+li{
+    list-style-position: outside;
+    padding-left: 20px;
+    margin-top: 1em;
+}
+.fiche-recette{
+    position: absolute;
+    top: 50px;
+    left: 24%;
+    right: 24%;
+    border-radius:20px;
+    background-color:hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    padding:2%;
+}
+#image-omelette{
+    border-radius: 20px;
+            
+}
+.Preparation{
+    background-color:hsl(330, 100%, 98%) ;
+    display: flex; 
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+}
+.liste_preparation{
+    margin: 0;
+}
+.introduction{
+    margin-bottom: 20px;
+}
+.Ingredients{
+    margin-bottom: 10px;
+}
+.Instructions{
+    border-top: 2px solid hsl(30, 18%, 87%);
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+    padding-bottom: 14px;
+}
+.nutrition_table{
+    table-layout: fixed;
+    width: 80%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 40px;   
+}
+th{
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+    padding: 10px;    
+}    
+
+@media screen and (max-width:376px) {
+    body{
+        margin: 0;
+    }
+    #image-omelette{
+        border-radius: 0%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 375px;
+        overflow: visible;
+    }    
+    .fiche-recette{
+        position: static;
+        padding: 5%;
+        margin-top:172px ;
+        border-radius: 0%;
+       
+    }
+}
